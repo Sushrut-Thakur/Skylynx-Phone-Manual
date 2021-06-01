@@ -2,12 +2,13 @@
 /* font-family: 'Montserrat', sans-serif; */
 
 :root {
-	--color-navbar: rgba(130, 240, 80, 0.5);
+	--color-navbar: rgb(236, 108, 38);
+	--color-nav-bg: rgb(225, 225, 225);
 }
 
 * {
 	box-sizing: border-box;
-	border: 1px solid red;
+	/* border: 1px solid red; */
 }
 
 html {
@@ -16,4 +17,138 @@ html {
 
 body {
 	font-family: 'Montserrat', sans-serif;
+	margin: 2rem 5rem 2rem 33rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+code {
+	/* I've used the code tag only to complete a test case of FCC. And also to make the link look better in monospace */
+}
+
+#navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 30rem;
+	height: 100%;
+	border-right: 3px solid var(--color-navbar);
+	background-color: var(--color-nav-bg);
+	overflow-y: auto;
+}
+
+.main-header {
+	font-size: 3rem;
+	text-align: center;
+	padding: 1rem;
+	margin: 0.5rem auto;
+	border-bottom: 3px solid var(--color-navbar);
+}
+
+.nav-link {
+	font-size: 1.5rem;
+	/* height: 3rem; */
+	display: block;
+	margin: 0 auto;
+	padding: 1rem 2rem;
+	border-bottom: 1px solid black;
+	text-align: left;
+	color: black;
+}
+
+#main-doc {
+	padding: 2rem;
+}
+
+.main-section {
+	padding: 1rem;
+}
+
+.section-header {
+	font-size: 3rem;
+	text-align: left;
+	margin-bottom: 1rem;
+}
+
+.section-paragraph, .section-list {
+	font-size: 1.5rem;
+	line-height: 1.5;
+}
+
+section a{
+	color: var(--color-navbar);
+	padding: 0 0.2rem;
+}
+
+.img-section {
+	position: relative;
+}
+
+.diagram {
+	display: inline-block;
+}
+
+.phone, .sim {
+	display: block;
+	margin: 1rem auto;
+}
+
+.dustbin {
+	display: inline-block;
+	float: left;
+	height: 7rem;
+}
+
+.earwarning {
+	/* float: left; */
+	height: 8rem;
+}
+
+table {
+	max-width: 90%;
+}
+
+td {
+	padding: 1rem 0;
+}
+
+h3 {
+	font-size: 2.75rem;
+}
+
+.ce {
+	padding-left: 10rem;
+	height: 15rem;
+}
+
+.countries {
+	max-width: 100%;
+}
+
+@media (max-width: 830px) {
+	#navbar {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 23rem;
+		width: 100%;
+		overflow-y: scroll;
+		z-index: 1;
+		border-right: none;
+		border-bottom: 3px solid var(--color-navbar);
+	}
+
+	.nav-link {
+		text-align: center;
+	}
+
+	body {
+		margin: 25rem auto 2rem;
+	}
+
+	.ce {
+		padding: 0;
+	}
 }
