@@ -102,7 +102,6 @@ section a{
 }
 
 .earwarning {
-	/* float: left; */
 	height: 8rem;
 }
 
@@ -146,9 +145,26 @@ h3 {
 
 	body {
 		margin: 25rem auto 2rem;
+		width: 100%
 	}
 
 	.ce {
 		padding: 0;
+		height: 7rem;
+	}
+}
+
+@media (max-width: 500px) {
+	.phone {
+		max-width: 100%;
+	}
+
+	.main-section {
+		padding: 1rem 0;
+	}
+
+	section a{
+		display: block;
+		overflow-wrap: break-word;
 	}
 }
